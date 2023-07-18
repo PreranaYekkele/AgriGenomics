@@ -2,15 +2,15 @@ from flask import Flask, render_template, request, redirect, url_for
 import csv
 import pandas as pd
 import numpy as np
-#from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
-#from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
 model_path = "rf_model.pkl"  
 model_path1 = "model.pkl"
 encoded_data_path = "csv_files/encoded.csv"
 encoded_data_path1 = "csv_files/yencoded.csv"  
-"""rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_regressor = RandomForestRegressor(n_estimators=100, random_state=42)
 rf_regressor1 = RandomForestRegressor(n_estimators=120, random_state=47)
 encoded_data = pd.read_csv(encoded_data_path)
@@ -25,7 +25,7 @@ X_train, X_test, y_subpopulation_train, y_subpopulation_test, y_height_train, y_
 X1_train, X1_test, y_yield_train, y_yield_test = train_test_split(X1, y_yield, test_size=0.2, random_state=42)
 rf_classifier.fit(X_train, y_subpopulation_train)
 rf_regressor.fit(X_train, y_height_train)
-rf_regressor1.fit(X1_train, y_yield_train)"""
+rf_regressor1.fit(X1_train, y_yield_train)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
