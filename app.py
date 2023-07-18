@@ -6,11 +6,11 @@ import numpy as np
 #from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
-"""model_path = "rf_model.pkl"  
+model_path = "rf_model.pkl"  
 model_path1 = "model.pkl"
 encoded_data_path = "csv_files/encoded.csv"
 encoded_data_path1 = "csv_files/yencoded.csv"  
-rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+"""rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_regressor = RandomForestRegressor(n_estimators=100, random_state=42)
 rf_regressor1 = RandomForestRegressor(n_estimators=120, random_state=47)
 encoded_data = pd.read_csv(encoded_data_path)
