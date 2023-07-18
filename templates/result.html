@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='okayokay.css') }}">
+</head>
+<body>
+    <header>
+        <div class="home-section">
+            <a href="/predict">Home</a>
+        </div>
+        <h1>Result</h1>
+    </header>
+    <main>
+        <section id="result-section">
+            <div>
+                <label for="output-mean-height">Predicted Height (cms)</label>
+                <span id="output-mean-height">{{ predicted_height }}</span>
+            </div>
+            <div>
+                <label for="output-yield">Predicted Yield </label>
+                <span id="output-yield">{{ predicted_yield }}</span>
+            </div>
+            <div>
+                <label for="output-subpopulation">Predicted Subpopulation</label>
+                <span id="output-subpopulation">{{ predicted_subpopulation }}</span> 
+            </div>
+        </section>
+    </main>
+    <script>
+        const predictedHeight = "{{ predicted_height }}";
+        const predictedSubpopulation = "{{ predicted_subpopulation }}";
+        const roundedheight = Number(predictedHeight).toFixed(2);
+        const predictedYield = "{{ predicted_yield }}";
+        const roundedyield = Number(predictedYield).toFixed(2);
+        document.getElementById("output-mean-height").textContent = roundedheight;
+        document.getElementById("output-subpopulation").textContent = predictedSubpopulation;
+        document.getElementById("output-yield").textContent = roundedyield;
+    </script>
+</body>
+</html>

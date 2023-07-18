@@ -1,0 +1,81 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url("IMAGES/background_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h1 {
+    color: #333;
+    font-size: 52px;
+}
+
+
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#result-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.home-section {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .home-section:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+
+label {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+span {
+    font-weight: normal;
+}
+
+#output-mean-height {
+    display: block;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#output-subpopulation {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px ;
+}
+#output-yield {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px ;
+}

@@ -1,0 +1,150 @@
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  background-image: url("IMAGES/background_4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  background-color: #45a049;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  animation: fade-in 1s ease-out;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+#home-link {
+  margin-right: auto;
+}
+
+#info-link {
+  margin-left: auto;
+}
+
+#home-link a,
+#info-link a {
+  text-decoration: none;
+  color:darkseagreen;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#home-link a:hover,
+#info-link a:hover {
+  color:#000000;
+}
+
+
+#home-section h2 {
+  font-size: 40px;
+  text-align: center;
+  animation: fade-in 1s ease-out;
+  color:#ffffff;
+}
+
+#home-section p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  animation: fade-in 1s ease-out;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+#info-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  margin: 250px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#info-section h3 {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#info-section p {
+  font-size: 5px;
+  margin-bottom: 5px;
+  font-weight:lighter;
+  text-align: center;
+}
+
+#button-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.button {
+  display: inline-block;
+  background-color:teal;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 40px 120px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: button-fade-in 1s ease-out;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color:darkslategrey;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes button-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

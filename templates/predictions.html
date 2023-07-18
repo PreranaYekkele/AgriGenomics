@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicting Oryza sativa Plant Height</title>
+    <!--<link rel="stylesheet" href="okay.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='predictions.css') }}">
+</head>
+<body>
+    <header>
+        <div class="home-section">
+            <a href="/predict">Home</a>
+        </div>
+        <h1>Predictions</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <form id="input-form" action="{{ url_for('height') }}" method="POST">
+                <label for="dna-sequences">Enter DNA Sequence (9 chromosomes)</label>
+                <textarea id="dna-sequences" name="dna-sequences" rows="1" cols="9" maxlength="9" pattern="[A-Z]{9}" required></textarea>
+                <button type="submit">Predict</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("dna-sequences").addEventListener("keypress", function(event) {
+
+            if (event.keyCode === 13) {
+                event.preventDefault(); 
+                document.getElementById("input-form").submit(); 
+            }
+        });
+    </script>
+</body>
+</html>

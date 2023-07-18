@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yield Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='height_info.css') }}">
+</head>
+<body>
+    <div class="home-section">
+        <a href="/predict">Home</a>
+    </div>
+    <h1>Yield Info</h1>
+    <table>
+        {% for row in data %}
+        <tr>
+            {% for value in row %}
+            <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
