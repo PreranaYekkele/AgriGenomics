@@ -63,7 +63,7 @@ def result():
 
 @app.route('/height-info')
 def height_info():
-    file_path = 'C:/Users/Prerana/Desktop/AGROGENOMICS/flask/data/heightinfo.csv'
+    file_path = 'data/heightinfo.csv'
 
     with open(file_path, 'r', newline='') as csvfile:
         reader = csv.reader(csvfile)
@@ -73,7 +73,7 @@ def height_info():
 
 @app.route('/yield-info')
 def yield_info():
-    file_path = 'C:/Users/Prerana/Desktop/AGROGENOMICS/flask/data/yieldinfo.csv'
+    file_path = 'data/yieldinfo.csv'
 
     with open(file_path, 'r', newline='') as csvfile:
         reader = csv.reader(csvfile)
@@ -83,7 +83,7 @@ def yield_info():
 
 @app.route('/GWAS-file')
 def gwas():
-    file_path = 'C:/Users/Prerana/Desktop/AGROGENOMICS/flask/data/GWAS_file.csv'
+    file_path = 'data/GWAS_file.csv'
 
     with open(file_path, 'r', newline='') as csvfile:
         reader = csv.reader(csvfile)
