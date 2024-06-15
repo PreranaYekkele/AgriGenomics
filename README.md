@@ -12,6 +12,8 @@ Leveraging machine learning and bioinformatics, this project predicts plant trai
 
 Deployed at: https://agrigen1.onrender.com/
 
+![AgriGen](agrigen.png "AgriGen")
+
 ## Contact
 
 For any inquiries or support, please contact at [preranayekkele@gmail.com]
